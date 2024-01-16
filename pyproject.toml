@@ -7,9 +7,7 @@ maintainers = ["Redis OSS <oss@redis.com>"]
 license = "BSD-3-Clause"
 readme = "README.md"
 repository = "https://github.com/redis/redis-om-python"
-packages = [
-    { "include" = "aredis_om" },
-]
+packages = [{ "include" = "aredis_om" }]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Console",
@@ -23,11 +21,7 @@ classifiers = [
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python',
 ]
-include=[
-    "docs/*",
-    "images/*",
-    "redis_om/**/*",
-]
+include = ["docs/*", "images/*", "redis_om/**/*"]
 
 [tool.poetry.urls]
 "Code" = "https://github.com/redis/redis-om-python"
@@ -36,7 +30,7 @@ include=[
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
 redis = ">=3.5.3,<5.0.0"
-pydantic = ">=1.10.2,<2.1.0"
+pydantic = ">=1.10.2,<3.0.0"
 click = "^8.0.1"
 types-redis = ">=3.5.9,<5.0.0"
 python-ulid = "^1.0.3"
